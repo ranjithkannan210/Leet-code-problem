@@ -1,11 +1,11 @@
 class Solution {
-    public int numJewelsInStones(String jewels, String stones) {
+    public int numJewelsInStones(String s1, String s2) {
         int a=0;
-        for(int i=0;i<jewels.length();i++){
-            for(int j=0;j<stones.length();j++){
-                if(jewels.charAt(i)==stones.charAt(j)){
-                    a++;
-                }
+        for(int i=0;i<s2.length();i++){
+            char ch=s2.charAt(i);
+            if(s1.indexOf(ch)!=-1){
+                a++;
+
             }
         }
         return a;
